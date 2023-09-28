@@ -1,5 +1,5 @@
-### Note 1 ###
-CloudFront provides two ways to send authenticated requests to an Amazon S3 origin: origin access control (OAC) and origin access identity (OAI).
+## Concept
+**CloudFront** provides two ways to send authenticated requests to an Amazon S3 origin: origin access control (OAC) and origin access identity (OAI).
 
 Exam Alert:
 
