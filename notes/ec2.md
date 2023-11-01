@@ -29,3 +29,15 @@ A spread placement group can span multiple Availability Zones in the same Region
 
 ## Dedicated Instances
 **Dedicated Instances** are Amazon EC2 instances that run in a virtual private cloud (VPC) on hardware that's dedicated to a single customer. Dedicated Instances that belong to different AWS accounts are physically isolated at a hardware level, even if those accounts are linked to a single-payer account. However, Dedicated Instances may share hardware with other instances from the same AWS account that are not Dedicated Instances
+
+## Instance Hibernate
+When you hibernate an instance, AWS signals the operating system to perform hibernation (suspend-to-disk). Hibernation saves the contents from the instance memory (RAM) to your Amazon EBS root volume. AWS then persists the instance's Amazon EBS root volume and any attached Amazon EBS data volumes.
+
+When you start your instance:
+1. The Amazon EBS root volume is restored to its previous state
+2. The RAM contents are reloaded
+3. The processes that were previously running on the instance are resumed
+Previously attached data volumes are reattached and the instance retains its instance ID
+
+## Recovery
+The recover action is supported only on instances that have Amazon EBS volumes configured on them, instance store volumes are not supported for automatic recovery by Amazon CloudWatch alarms.
