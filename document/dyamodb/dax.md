@@ -1,0 +1,4 @@
+**DAX** is a DynamoDB-compatible caching service that enables you to benefit from fast in-memory performance for demanding applications.
+
+* DAX supports server-side encryption. With encryption at rest, the data persisted by DAX on disk will be encrypted. DAX writes data to disk as part of propagating changes from the primary node to read replicas. 
+* DAX also supports encryption in transit, ensuring that all requests and responses between your application and the cluster are encrypted by transport level security (TLS), and connections to the cluster can be authenticated by verification of a cluster x509 certificate.

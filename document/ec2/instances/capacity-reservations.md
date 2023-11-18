@@ -1,0 +1,1 @@
+**Capacity Reservations** allow you to reserve compute capacity for Amazon EC2 instances in a specific Availability Zone.
