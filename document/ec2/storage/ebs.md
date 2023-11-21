@@ -19,3 +19,6 @@
 * When you copy an encrypted snapshot that you own or have access to, you can reencrypt it with a different key during the copy process.
 * The first snapshot you take of an encrypted volume that has been created from an unencrypted snapshot is always a full snapshot.
 * The first snapshot you take of a reencrypted volume, which has a different CMK compared to the source snapshot, is always a full snapshot. 
+
+# EBS Volume Types
+!['EBS Volume Type']('../../../../../images/ebs-volume-types.jpeg)

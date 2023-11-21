@@ -1,0 +1,1 @@
+AWS Direct Connect does not support encrypted network connectivity between an on-premises data center and AWS Cloud

@@ -1,0 +1,1 @@
+!['Memcached vs Redis']('../../../../images/redis-vs-memcached.jpg)

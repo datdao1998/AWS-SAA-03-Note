@@ -21,3 +21,12 @@ Control what actions a specified principal can perform on that resource and unde
 * **Organizations SCPs** – Use an AWS Organizations service control policy (SCP) to define the maximum permissions for account members of an organization or organizational unit (OU). SCPs limit permissions that identity-based policies or resource-based policies grant to entities (users or roles) within the account, but do not grant permissions.
 * **Access control lists (ACLs)** – Use ACLs to control which principals in other accounts can access the resource to which the ACL is attached. ACLs are similar to resource-based policies, although they are the only policy type that does not use the JSON policy document structure. ACLs are cross-account permissions policies that grant permissions to the specified principal. ACLs cannot grant permissions to entities within the same account.
 * **Session policies** – Pass advanced session policies when you use the AWS CLI or AWS API to assume a role or a federated user. Session policies limit the permissions that the role or user's identity-based policies grant to the session. Session policies limit permissions for a created session, but do not grant permissions. For more information, see Session Policies.
+
+## Some Note From Exam
+Some of the AWS tasks that only a root account user can do are as follows:
+* Change account name or root password or root email address
+* Change AWS support plan
+* Close AWS account
+* Enable AWS Multi-Factor Authentication (AWS MFA) on S3 bucket delete
+* Create Cloudfront key pair
+* Register for GovCloud.
