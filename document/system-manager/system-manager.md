@@ -1,0 +1,1 @@
+**AWS Systems Manager** provides a centralized and secure way to manage EC2 instances. Session Manager allows you to establish secure, audited, and controlled remote sessions to EC2 instances without exposing SSH ports or managing SSH keys. It also integrates with AWS Identity and Access Management (IAM), making it easy to control who can access instances.

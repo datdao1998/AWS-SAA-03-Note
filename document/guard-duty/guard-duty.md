@@ -1,0 +1,3 @@
+**Amazon GuardDuty** continuously monitors for malicious or unauthorized behavior to help protect your AWS resources, including your AWS accounts and access keys.
+
+Amazon GuardDuty identifies any unusual or unauthorized activity, like cryptocurrency mining or infrastructure deployments in a region that has never been used. Powered by threat intelligence and machine learning, GuardDuty is continuously evolving to help you protect your AWS environment.

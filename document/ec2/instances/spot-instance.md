@@ -15,3 +15,12 @@ Request type: The Spot Instance request type that you choose determines what hap
 * You can't stop a Spot Instance if the associated Spot Instance request is cancelled. When the Spot Instance request is cancelled, you can only terminate the Spot Instance.
 * You can't stop a Spot Instance if it is part of a fleet or launch group, or Availability Zone group.
 
+## Spot Block
+Spot Instances with a defined duration (also known as **Spot blocks**) are designed not to be interrupted and will run continuously for the duration you select. 
+
+This makes them ideal for jobs that take a finite time to complete, such as batch processing, encoding and rendering, modeling and analysis, and continuous integration
+
+## Spot Fleet
+**A Spot Fleet** is a collection, or fleet, of Spot Instances, and optionally On-Demand Instances.
+
+The Spot Fleet attempts to launch the number of Spot Instances and On-Demand Instances to meet the target capacity that you specified in the Spot Fleet request. The request for Spot Instances is fulfilled if there is available capacity and the maximum price you specified in the request exceeds the current Spot price. The Spot Fleet also attempts to maintain its target capacity fleet if your Spot Instances are interrupted.

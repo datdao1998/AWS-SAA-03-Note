@@ -22,3 +22,6 @@
 
 # EBS Volume Types
 !['EBS Volume Type']('../../../../../images/ebs-volume-types.jpeg)
+
+# RAID Configuration
+!['RAID Configuration']('../../../../../images/raid-configuration.jpeg)

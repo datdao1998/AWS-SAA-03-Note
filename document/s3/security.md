@@ -18,3 +18,4 @@ Dual-layer server-side encryption with AWS KMS keys (DSSE-KMS) is similar to SSE
 
 ## 4. Server-side encryption with customer-provided keys (SSE-C)
 Server-side encryption is about protecting data at rest. Server-side encryption encrypts only the object data, not the object metadata. By using server-side encryption with customer-provided keys (SSE-C), you can store your own encryption keys. With the encryption key that you provide as part of your request, Amazon S3 manages data encryption as it writes to disks and data decryption when you access your objects. Therefore, you don't need to maintain any code to perform data encryption and decryption. The only thing that you need to do is manage the encryption keys that you provide.
+
