@@ -24,3 +24,18 @@ When you modify the database engine for your DB instance in a Multi-AZ deploymen
 You also benefit from enhanced database availability when running your DB instance as a Multi-AZ deployment. If an Availability Zone failure or DB instance failure occurs, your availability impact is limited to the time automatic failover takes to complete.
 
 Another implied benefit of running your DB instance as a Multi-AZ deployment is that DB instance failover is automatic and requires no administration. In an Amazon RDS context, this means you are not required to monitor DB instance events and initiate manual DB instance recovery in the event of an Availability Zone failure or DB instance failure.
+
+======================================>
+
+**Question**
+
+A development team runs monthly resource-intensive tests on its general purpose Amazon RDS for MySQL DB instance with Performance Insights enabled. The testing lasts for 48 hours once a month and is the only process that uses the database. The team wants to reduce the cost of running the tests without reducing the compute and memory attributes of the DB instance.
+Which solution meets these requirements MOST cost-effectively?
+
+A. Stop the DB instance when tests are completed. Restart the DB instance when required.
+
+B. Use an Auto Scaling policy with the DB instance to automatically scale when tests are completed.
+
+**C. Create a snapshot when tests are completed. Terminate the DB instance and restore the snapshot when required.**
+
+D. Modify the DB instance to a low-capacity instance when tests are completed. Modify the DB instance again when required.

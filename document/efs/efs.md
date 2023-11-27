@@ -1,5 +1,7 @@
 ## What is EFS
-**Amazon Elastic File System (Amazon EFS)** provides a simple, scalable, fully managed, elastic, NFS file system for use with AWS Cloud services and on-premises resources. 
+**Amazon Elastic File System (Amazon EFS)** provides a simple, scalable, fully managed, elastic, NFS file system for use with AWS Cloud services and on-premises resources.
+
+*Feature*: allows concurrent connections from multiple EC2 instances
 
 **Amazon EFS Infrequent Access (EFS IA)** is a storage class that provides price/performance that is cost-optimized for files not accessed every day, with storage prices up to 92% lower compared to Amazon EFS Standard. The EFS IA storage class costs only $0.025/GB-month. To get started with EFS IA, simply enable EFS Lifecycle Management for your file system by selecting a lifecycle policy that matches your needs.
 

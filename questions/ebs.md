@@ -73,3 +73,26 @@ Here is a list of important information about EBS Volumes:
 – Amazon EBS encryption uses 256-bit Advanced Encryption Standard algorithms (AES-256)
 
 – EBS Volumes offer 99.999% SLA.
+
+=====================================================>
+
+**Question**
+
+As part of the Business Continuity Plan of your company, your IT Director instructed you to set up an automated backup of all of the EBS Volumes for your EC2 instances as soon as possible.
+
+What is the fastest and most cost-effective solution to automatically back up all of your EBS Volumes?
+
+A. Use an EBS-cycle policy in Amazon S3 to automatically back up the EBS volumes.
+
+B. Set your Amazon Storage Gateway with EBS volumes as the data source and store the backups in your on-premises servers through the storage gateway.
+
+C. For an automated solution, create a scheduled job that calls the "create-snapshot" command via the AWS CLI to take a snapshot of production EBS volumes periodically.
+
+**D. Use Amazon Data Lifecycle Manager (Amazon DLM) to automate the creation of EBS snapshots.**
+
+**Explained**
+
+You can use Amazon Data Lifecycle Manager (Amazon DLM) to automate the creation, retention, and deletion of snapshots taken to back up your Amazon EBS volumes. Automating snapshot management helps you to:
+* Protect valuable data by enforcing a regular backup schedule.
+* Retain backups as required by auditors or internal compliance.
+* Reduce storage costs by deleting outdated backups.

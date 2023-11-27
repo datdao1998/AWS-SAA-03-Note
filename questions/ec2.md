@@ -113,3 +113,21 @@ D. There was an issue with the Amazon EC2 API. Just resend the requests and thes
 You are limited to running On-Demand Instances per your vCPU-based On-Demand Instance limit, purchasing 20 Reserved Instances, and requesting Spot Instances per your dynamic Spot limit per region. New AWS accounts may start with limits that are lower than the limits described here.
 
 If you need more instances, complete the Amazon EC2 limit increase request form with your use case, and your limit increase will be considered. Limit increases are tied to the region they were requested for.
+
+=====================================================>
+
+**Question**
+
+A large financial firm in the country has an AWS environment that contains several Reserved EC2 instances hosting a web application that has been decommissioned last week. To save costs, you need to stop incurring charges for the Reserved instances as soon as possible.
+
+What cost-effective steps will you take in this circumstance? (Select TWO.)
+
+**A. Go to the AWS Reserved Instance Marketplace and sell the Reserved instances.**
+
+B.Contact AWS to cancel your AWS subscription.
+
+C. Stop the Reserved instances as soon as possible.
+
+**D. Terminate the Reserved instances as soon as possible to avoid getting billed at the on-demand price when it expires.**
+
+E. Go to the Amazon.com online shopping website and sell the Reserved instances.
