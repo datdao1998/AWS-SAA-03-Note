@@ -72,3 +72,39 @@ D. Server-side encryption with customer-provided keys (SSE-C)
 **Explained**
 
 Client-side encryption is the act of encrypting your data locally to help ensure its security in transit and at rest. To encrypt your objects before you send them to Amazon S3, use the Amazon S3 Encryption Client. When your objects are encrypted in this manner, your objects aren't exposed to any third party, including AWS. Amazon S3 receives your objects already encrypted; Amazon S3 does not play a role in encrypting or decrypting your objects. You can use both the Amazon S3 Encryption Client and server-side encryption to encrypt your data. When you send encrypted objects to Amazon S3, Amazon S3 doesn't recognize the objects as being encrypted, it only detects typical objects.
+
+=====================================================>
+
+**Question**
+
+A software development company is using serverless computing with AWS Lambda to build and run applications without having to set up or manage servers. They have a Lambda function that connects to a MongoDB Atlas, which is a popular Database as a Service (DBaaS) platform and also uses a third party API to fetch certain data for their application. One of the developers was instructed to create the environment variables for the MongoDB database hostname, username, and password as well as the API credentials that will be used by the Lambda function for DEV, SIT, UAT, and PROD environments.
+
+Considering that the Lambda function is storing sensitive database and API credentials, how can this information be secured to prevent other developers in the team, or anyone, from seeing these credentials in plain text? Select the best option that provides maximum security.
+
+A. Enable SSL encryption that leverages on AWS CloudHSM to store and encrypt the sensitive information.
+
+B. AWS Lambda does not provide encryption for the environment variables. Deploy your code to an EC2 instance instead.
+
+**C. Create a new KMS key and use it to enable encryption helpers that leverage on AWS Key Management Service to store and encrypt the sensitive information.**
+
+D. There is no need to do anything because, by default, AWS Lambda already encrypts the environment variables using the AWS Key Management Service.
+
+=====================================================>
+
+**Question**
+
+An online medical system hosted in AWS stores sensitive Personally Identifiable Information (PII) of the users in an Amazon S3 bucket. Both the master keys and the unencrypted data should never be sent to AWS to comply with the strict compliance and regulatory requirements of the company.
+
+Which S3 encryption technique should the Architect use?
+
+A. Use S3 client-side encryption with a KMS-managed customer master key.
+
+**B. Use S3 client-side encryption with a client-side master key.**
+
+C. Use S3 server-side encryption with a KMS managed key.
+
+D. Use S3 server-side encryption with customer provided key.
+
+**Explained**
+* When using an AWS KMS-managed customer master key to enable client-side data encryption, you provide an AWS KMS customer master key ID (CMK ID) to AWS.
+* When you use client-side master key for client-side data encryption, your client-side master keys and your unencrypted data are never sent to AWS. It’s important that you safely manage your encryption keys because if you lose them, you can’t decrypt your data.

@@ -1,0 +1,1 @@
+**AWS Transfer for SFTP** enables you to easily move your file transfer workloads that use the Secure Shell File Transfer Protocol (SFTP) to AWS without needing to modify your applications or manage any SFTP servers.
