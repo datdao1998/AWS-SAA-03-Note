@@ -19,3 +19,11 @@ A NAT instance provides network address translation (NAT). You can use a NAT ins
 | Maintenance  |  Managed by AWS | Managed by you  |
 |  Port forwarding | Not supported  | Manually customize the configuration to support port forwarding  |
 |  Bastion servers | Not supported  |  Use as a bastion server |
+
+
+
+## VPN Connection
+
+To create a VPN connection, you must create 
+* A customer gateway resource in AWS, which provides information to AWS about your customer gateway device.
+* An Internet-routable IP address (static) of the customer gateway’s external interface.
