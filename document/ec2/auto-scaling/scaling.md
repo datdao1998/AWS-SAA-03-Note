@@ -1,5 +1,9 @@
-If the Auto Scaling group (ASG) is using EC2 as the health check type and the Application Load Balancer (ALB) is using its in-built health check, there may be a situation where 
-* The ALB health check fails because the health check pings fail to receive a response from the instance.
-* At the same time, ASG health check can come back as successful because it is based on EC2 based health check.
+# Scaling method
+## Dynamic scaling
+Amazon EC2 Auto Scaling supports the following types of dynamic scaling policies:
 
-Therefore, in this scenario, the ALB will remove the instance from its inventory, however, the Auto Scaling Group will fail to provide the replacement instance.
+* **Target tracking scaling** — Increase and decrease the current capacity of the group based on a Amazon CloudWatch metric and a target value. It works similar to the way that your thermostat maintains the temperature of your home—you select a temperature and the thermostat does the rest.
+
+* **Step scaling** — Increase and decrease the current capacity of the group based on a set of scaling adjustments, known as step adjustments, that vary based on the size of the alarm breach.
+
+* **Simple scaling** — Increase and decrease the current capacity of the group based on a single scaling adjustment, with a cooldown period between each scaling activity.

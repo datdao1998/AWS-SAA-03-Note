@@ -1,3 +1,5 @@
 **AWS AppSync** is a managed service that makes it easy to build scalable APIs that connect applications to data. Developers use AppSync every day to build GraphQL APIs that interact with data sources like Amazon DynamoDB, AWS Lambda, and HTTP APIs. With AppSync, developers can write their resolvers using JavaScript, and run their code on AppSync’s APPSYNC_JS runtime.
 
+> AWS AppSync is a serverless GraphQL and Pub/Sub API service that simplifies building modern web and mobile applications.
+
 **AppSync pipeline resolvers** offer an elegant server-side solution to address the common challenge faced in web applications—aggregating data from multiple database tables. Instead of invoking multiple API calls across different data sources, which can degrade application performance and user experience, AppSync pipeline resolvers enable easy retrieval of data from multiple sources with just a single call. By leveraging Pipeline functions, these resolvers streamline the process of consolidating and presenting data to end-users.

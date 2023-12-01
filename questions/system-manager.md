@@ -32,3 +32,19 @@ D. Store the values in a file saved in an Amazon S3 bucket. Enable encryption on
 **Explained**
 
 It is possible to store encrypted parameters on Secrets Manager, however, there is a cost associated with using this service. If you are storing mostly application parameters, then the Systems Manager Parameter Store is a better fit.
+
+=====================================================>
+
+**Question**
+
+A startup launched a fleet of on-demand EC2 instances to host a massively multiplayer online role-playing game (MMORPG). The EC2 instances are configured with Auto Scaling and AWS Systems Manager. 
+
+What can be used to configure the EC2 instances without having to establish an RDP or SSH connection to each instance?
+
+A. AWS Config
+
+B. AWS CodePipeline
+
+**C. Run Command**
+
+D. EC2Config

@@ -96,3 +96,38 @@ You can use Amazon Data Lifecycle Manager (Amazon DLM) to automate the creation,
 * Protect valuable data by enforcing a regular backup schedule.
 * Retain backups as required by auditors or internal compliance.
 * Reduce storage costs by deleting outdated backups.
+
+=====================================================>
+
+**Question**
+
+A technical lead of the Cloud Infrastructure team was consulted by a software developer regarding the required AWS resources of the web application that he is building. The developer knows that an Instance Store only provides ephemeral storage where the data is automatically deleted when the instance is terminated. To ensure that the data of the web application persists, the app should be launched in an EC2 instance that has a durable, block-level storage volume attached. The developer knows that they need to use an EBS volume, but they are not sure what type they need to use.
+
+In this scenario, which of the following is true about Amazon EBS volume types and their respective usage? (Select TWO.)
+
+A. Single root I/O virtualization (SR-IOV) volumes are suitable for a broad range of workloads, including small to medium-sized databases, development and test environments, and boot volumes.
+
+B. General Purpose SSD (gp3) volumes with multi-attach enabled offer consistent and low-latency performance, and are designed for applications requiring multi-az resiliency.
+
+**C. Magnetic volumes provide the lowest cost per gigabyte of all EBS volume types and are ideal for workloads where data is accessed infrequently, and applications where the lowest storage cost is important.**
+
+**D. Provisioned IOPS volumes offer storage with consistent and low-latency performance, and are designed for I/O intensive applications such as large relational or NoSQL databases.**
+
+E. Spot volumes provide the lowest cost per gigabyte of all EBS volume types and are ideal for workloads where data is accessed infrequently, and applications where the lowest storage cost is important.
+
+=====================================================>
+
+
+**Question**
+
+A company has an On-Demand EC2 instance with an attached EBS volume. There is a scheduled job that creates a snapshot of this EBS volume every midnight at 12 AM when the instance is not used. One night, there has been a production incident where you need to perform a change on both the instance and on the EBS volume at the same time when the snapshot is currently taking place.
+
+Which of the following scenario is true when it comes to the usage of an EBS volume while the snapshot is in progress?
+
+**A. The EBS volume can be used while the snapshot is in progress.**
+
+B. The EBS volume cannot be detached or attached to an EC2 instance until the snapshot completes
+
+C. The EBS volume can be used in read-only mode while the snapshot is in progress.
+
+D. The EBS volume cannot be used until the snapshot completes.

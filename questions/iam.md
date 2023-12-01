@@ -11,3 +11,19 @@ B. Create an IAM Role that enforces MFA authentication with the least privilege 
 C. Create a Service Control Policy (SCP) that enforces MFA authentication for each department. Add a trust relationship to every SCP and attach it to each IAM User.
 
 **D. Launch an IAM Group for each department. Create an IAM Policy that enforces MFA authentication with the least privilege permission. Attach the IAM Policy to each IAM Group.**
+
+=====================================================>
+
+**Question**
+
+A company needs to integrate the Lightweight Directory Access Protocol (LDAP) directory service from the on-premises data center to the AWS VPC using IAM. The identity store which is currently being used is not compatible with SAML.
+
+Which of the following provides the most valid approach to implement the integration?
+
+**A. Develop an on-premises custom identity broker application and use STS to issue short-lived AWS credentials.**
+
+B. Use AWS Single Sign-On (SSO) service to enable single sign-on between AWS and your LDAP.
+
+C. Use IAM roles to rotate the IAM credentials whenever LDAP credentials are updated.
+
+D. Use an IAM policy that references the LDAP identifiers and AWS credentials.

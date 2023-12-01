@@ -131,3 +131,51 @@ C. Stop the Reserved instances as soon as possible.
 **D. Terminate the Reserved instances as soon as possible to avoid getting billed at the on-demand price when it expires.**
 
 E. Go to the Amazon.com online shopping website and sell the Reserved instances.
+
+=====================================================>
+
+**Question**
+
+A company has a High Performance Computing (HPC) cluster that is composed of EC2 Instances with Provisioned IOPS (io1) volume to process transaction-intensive, low-latency workloads. The Solutions Architect must maintain high IOPS while keeping the latency down by setting the optimal queue length for the volume. The size of each volume is 10 GiB.
+
+Which of the following is the MOST suitable configuration that the Architect should set up?
+
+**A. Set the IOPS to 500 then maintain a low queue length.**
+
+B. Set the IOPS to 800 then maintain a low queue length.
+
+C. Set the IOPS to 400 then maintain a low queue length.
+
+D. Set the IOPS to 600 then maintain a high queue length.
+
+=====================================================>
+
+**Question**
+
+A web application hosted in an Auto Scaling group of EC2 instances in AWS. The application receives a burst of traffic every morning, and a lot of users are complaining about request timeouts. The EC2 instance takes 1 minute to boot up before it can respond to user requests. The cloud architecture must be redesigned to better respond to the changing traffic of the application.
+
+How should the Solutions Architect redesign the architecture?
+
+A. Create a Network Load Balancer with slow-start mode.
+
+B. Create a new launch template and upgrade the size of the instance.
+
+**C. Create a step scaling policy and configure an instance warm-up time condition.**
+
+D. Create a CloudFront distribution and set the EC2 instance as the origin.
+
+=====================================================>
+
+**Question**
+
+A company is planning to launch a High Performance Computing (HPC) cluster in AWS that does Computational Fluid Dynamics (CFD) simulations. The solution should scale-out their simulation jobs to experiment with more tunable parameters for faster and more accurate results. The cluster is composed of Windows servers hosted on t3a.medium EC2 instances. As the Solutions Architect, you should ensure that the architecture provides higher bandwidth, higher packet per second (PPS) performance, and consistently lower inter-instance latencies.
+
+Which is the MOST suitable and cost-effective solution that the Architect should implement to achieve the above requirements?
+
+**A. Enable Enhanced Networking with Elastic Network Adapter (ENA) on the Windows EC2 Instances.**
+
+B. Enable Enhanced Networking with Elastic Fabric Adapter (EFA) on the Windows EC2 Instances.
+
+C. Enable Enhanced Networking with Intel 82599 Virtual Function (VF) interface on the Windows EC2 Instances.
+
+D. Use AWS ParallelCluster to deploy and manage the HPC cluster to provide higher bandwidth, higher packet per second (PPS) performance, and lower inter-instance latencies.

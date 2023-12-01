@@ -40,3 +40,20 @@ B. Launch an Amazon Redshift data warehouse cluster with Concurrency Scaling.
 C. Launch an Amazon Aurora Provisioned DB cluster with burstable performance DB instance class types.
 
 D. Launch a DynamoDB Global table with Auto Scaling enabled.
+
+
+==================================>
+
+**Question**
+
+A top investment bank is in the process of building a new Forex trading platform. To ensure high availability and scalability, you designed the trading platform to use an Elastic Load Balancer in front of an Auto Scaling group of On-Demand EC2 instances across multiple Availability Zones. For its database tier, you chose to use a single Amazon Aurora instance to take advantage of its distributed, fault-tolerant, and self-healing storage system.
+
+In the event of system failure on the primary database instance, what happens to Amazon Aurora during the failover?
+
+A. Amazon Aurora flips the canonical name record (CNAME) for your DB Instance to point at the healthy replica, which in turn is promoted to become the new primary.
+
+B. Aurora will first attempt to create a new DB Instance in a different Availability Zone of the original instance. If unable to do so, Aurora will attempt to create a new DB Instance in the original Availability Zone in which the instance was first launched.
+
+**C. Aurora will attempt to create a new DB Instance in the same Availability Zone as the original instance and is done on a best-effort basis.**
+
+D. Amazon Aurora flips the A record of your DB Instance to point at the healthy replica, which in turn is promoted to become the new primary.

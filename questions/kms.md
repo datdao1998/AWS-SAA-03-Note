@@ -108,3 +108,23 @@ D. Use S3 server-side encryption with customer provided key.
 **Explained**
 * When using an AWS KMS-managed customer master key to enable client-side data encryption, you provide an AWS KMS customer master key ID (CMK ID) to AWS.
 * When you use client-side master key for client-side data encryption, your client-side master keys and your unencrypted data are never sent to AWS. It’s important that you safely manage your encryption keys because if you lose them, you can’t decrypt your data.
+
+=====================================================>
+
+**Question**
+
+A health organization is using a large Dedicated EC2 instance with multiple EBS volumes to host its health records web application. The EBS volumes must be encrypted due to the confidentiality of the data that they are handling and also to comply with the HIPAA (Health Insurance Portability and Accountability Act) standard.
+
+In EBS encryption, what service does AWS use to secure the volume’s data at rest? (Select TWO.)
+
+A. By using S3 Client-Side Encryption.
+
+**B. By using Amazon-managed keys in AWS Key Management Service (KMS).**
+
+C. By using the SSL certificates provided by the AWS Certificate Manager (ACM).
+
+D. By using a password stored in CloudHSM.
+
+E. By using S3 Server-Side Encryption.
+
+**F. By using your own keys in AWS Key Management Service (KMS)**

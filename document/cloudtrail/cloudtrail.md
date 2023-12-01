@@ -2,6 +2,8 @@
 * With AWS CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. 
 * AWS CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command-line tools, and other AWS services.
 
+> By default, CloudTrail event log files are encrypted using Amazon S3 server-side encryption (SSE).
+
 **!!!ALERT**
 
 In general, to analyze any API calls made within an AWS account, AWS CloudTrail is used. 
