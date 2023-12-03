@@ -119,3 +119,19 @@ B. Deploy the application stack in two AWS Regions. Use an Amazon Route 53 laten
 C. Deploy the application stack in a single AWS Region. Use Amazon CloudFront to serve the static content. Serve the dynamic content directly from the ALB.
 
 D. Deploy the application stack in two AWS Regions. Use an Amazon Route 53 geolocation routing policy to serve all content from the ALB in the closest Region.
+
+==========================================>
+
+**Question**
+
+An online customer portal is hosted in an Amazon ECS cluster behind an Application Load Balancer. The portal is set as the origin of a CloudFront Web distribution to deliver the dynamic and static content to users in low-latency. A Cloud Engineer was assigned to configure CloudFront to communicate with your origin using HTTP or HTTPS, based on the protocol of the viewer request.
+
+What should the Engineer implement to complete this task?
+
+**A. Set the Origin Protocol policy of the CloudFront distribution to Match Viewer.**
+
+B. Set the Origin Protocol policy of the CloudFront distribution to HTTP and HTTPS.
+
+C. Set the Viewer Protocol policy of the CloudFront distribution to HTTP and HTTPS.
+
+D. Set the Viewer Protocol policy of the CloudFront distribution to Match Viewer.
