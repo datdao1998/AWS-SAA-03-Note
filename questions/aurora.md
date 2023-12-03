@@ -57,3 +57,71 @@ B. Aurora will first attempt to create a new DB Instance in a different Availabi
 **C. Aurora will attempt to create a new DB Instance in the same Availability Zone as the original instance and is done on a best-effort basis.**
 
 D. Amazon Aurora flips the A record of your DB Instance to point at the healthy replica, which in turn is promoted to become the new primary.
+
+==================================>
+
+**Question**
+
+A company hosts an application on AWS Lambda functions that are invoked by an Amazon API Gateway API. The Lambda functions save customer data to an Amazon Aurora MySQL database. Whenever the company upgrades the database, the Lambda functions fail to establish database connections until the upgrade is complete. The result is that customer data is not recorded for some of the event.
+A solutions architect needs to design a solution that stores customer data that is created during database upgrades.
+Which solution will meet these requirements?
+
+A. Provision an Amazon RDS proxy to sit between the Lambda functions and the database. Configure the Lambda functions to connect to the RDS proxy.
+
+B. Increase the run time of the Lambda functions to the maximum. Create a retry mechanism in the code that stores the customer data in the database.
+
+C. Persist the customer data to Lambda local storage. Configure new Lambda functions to scan the local storage to save the customer data to the database.
+
+**D. Store the customer data in an Amazon Simple Queue Service (Amazon SQS) FIFO queue. Create a new Lambda function that polls the queue and stores the customer data in the database.**
+
+==================================>
+
+**Question**
+
+A company is running a multi-tier web application on premises. The web application is containerized and runs on a number of Linux hosts connected to a PostgreSQL database that contains user records. The operational overhead of maintaining the infrastructure and capacity planning is limiting the company's growth. A solutions architect must improve the application's infrastructure.
+Which combination of actions should the solutions architect take to accomplish this? (Choose two.)
+
+**A. Migrate the PostgreSQL database to Amazon Aurora.**
+
+B. Migrate the web application to be hosted on Amazon EC2 instances.
+
+C. Set up an Amazon CloudFront distribution for the web application content.
+
+D. Set up Amazon ElastiCache between the web application and the PostgreSQL database.
+
+**E. Migrate the web application to be hosted on AWS Fargate with Amazon Elastic Container Service (Amazon ECS).**
+
+==================================>
+
+**Question**
+
+A company is migrating its on-premises PostgreSQL database to Amazon Aurora PostgreSQL. The on-premises database must remain online and accessible during the migration. The Aurora database must remain synchronized with the on-premises database.
+Which combination of actions must a solutions architect take to meet these requirements? (Choose two.)
+
+**A. Create an ongoing replication task.**
+
+B. Create a database backup of the on-premises database.
+
+**C. Create an AWS Database Migration Service (AWS DMS) replication server.**
+
+D. Convert the database schema by using the AWS Schema Conversion Tool (AWS SCT).
+
+E. Create an Amazon EventBridge (Amazon CloudWatch Events) rule to monitor the database synchronization.
+
+==================================>
+
+**Question**
+
+A company stores data in an Amazon Aurora PostgreSQL DB cluster. The company must store all the data for 5 years and must delete all the data after 5 years. The company also must indefinitely keep audit logs of actions that are performed within the database. Currently, the company has automated backups configured for Aurora.
+
+Which combination of steps should a solutions architect take to meet these requirements? (Choose two.)
+
+A. Take a manual snapshot of the DB cluster.
+
+B. Create a lifecycle policy for the automated backups.
+
+C. Configure automated backup retention for 5 years.
+
+**D. Configure an Amazon CloudWatch Logs export for the DB cluster.**
+
+**E. Use AWS Backup to take the backups and to keep the backups for 5 years.** 

@@ -35,3 +35,51 @@ Both AWS Storage Gateway and AWS DataSync can send data from your on-premises da
 * AWS Storage Gateway is more suitable to be used in integrating your storage services by replicating your data
 * AWS DataSync is better for workloads that require you to move or migrate your data.
 ```
+
+```
+Objects must be stored for at least 30 days in the current storage class before you can transition them to STANDARD_IA or ONEZONE_IA.
+```
+
+```
+IAM roles are global services that are available to all regions
+```
+
+```
+Amazon ECS doesn’t support resource-based policies.
+```
+
+```
+You cannot set up an Active-Active Failover with One Primary and One Secondary Resource. Remember that an Active-Active Failover uses all available resources all the time without a primary nor a secondary resource.
+```
+
+```
+CloudFront geo-restriction feature is primarily used to prevent users in specific geographic locations from accessing content that you’re distributing through a CloudFront web distribution. 
+
+It does not let you choose the resources that serve your traffic based on the geographic location of your users, unlike the Geolocation routing policy in Route 53.
+```
+
+```
+Reserved Instances that applied to terminated instances are still billed until the end of their term according to their payment option.
+```
+
+```
+No ready to use Cloudwatch metrics
+
+1. Memory utilization
+2. Disk swap utilization
+3. Disk space utilization
+4. Page file utilization
+5. Log collection
+```
+
+```
+Amazon QuickSight only support users(standard version) and groups (enterprise version). users and groups only exists without QuickSight. QuickSight don't support IAM. 
+```
+
+```
+Kinesis Data Firehose currently supports Amazon S3, Amazon Redshift, Amazon OpenSearch Service, Splunk, Datadog, NewRelic, Dynatrace, Sumologic, LogicMonitor, MongoDB, and HTTP End Point as destinations.
+```
+
+```
+You can use CloudFront to deliver video on demand (VOD) or live streaming video using any HTTP origin
+```

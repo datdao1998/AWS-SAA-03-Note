@@ -18,6 +18,7 @@ The source of the cost is that traffic between two EC2 instances is going over t
 =====================================================>
 
 **Question**
+
 A systems administration team has a requirement to run certain custom scripts only once during the launch of the Amazon Elastic Compute Cloud (Amazon EC2) instances that host their application.
 Which of the following represents the best way of configuring a solution for this requirement with minimal effort?
 
@@ -179,3 +180,19 @@ B. Enable Enhanced Networking with Elastic Fabric Adapter (EFA) on the Windows E
 C. Enable Enhanced Networking with Intel 82599 Virtual Function (VF) interface on the Windows EC2 Instances.
 
 D. Use AWS ParallelCluster to deploy and manage the HPC cluster to provide higher bandwidth, higher packet per second (PPS) performance, and lower inter-instance latencies.
+
+=====================================================>
+
+**Question**
+
+A multinational corporate and investment bank is regularly processing steady workloads of accruals, loan interests, and other critical financial calculations every night from 10 PM to 3 AM on their on-premises data center for their corporate clients. Once the process is done, the results are then uploaded to the Oracle General Ledger which means that the processing should not be delayed or interrupted. The CTO has decided to move its IT infrastructure to AWS to save costs. The company needs to reserve compute capacity in a specific Availability Zone to properly run their workloads.
+
+As the Senior Solutions Architect, how can you implement a cost-effective architecture in AWS for their financial system?
+
+**A. Use On-Demand Capacity Reservations, which provide compute capacity that is always available on the specified recurring schedule.**
+
+B. Use On-Demand EC2 instances which allows you to pay for the instances that you launch and use by the second. Reserve compute capacity in a specific Availability Zone to avoid any interruption.
+
+C. Use Regional Reserved Instances to reserve capacity on a specific Availability Zone and lower down the operating cost through its billing discounts.
+
+D. Use Dedicated Hosts which provide a physical host that is fully dedicated to running your instances, and bring your existing per-socket, per-core, or per-VM software licenses to reduce costs.

@@ -18,6 +18,7 @@ Using field-level encryption to help protect sensitive data
 * Field-level encryption allows you to enable your users to securely upload sensitive information to your web servers. The sensitive information provided by your users is encrypted at the edge, close to the user, and remains encrypted throughout your entire application stack. This encryption ensures that only applications that need the data—and have the credentials to decrypt it—are able to do so.
 
 
-
+# CloudFront geographic restriction
+You can use **Geographic restrictions**, sometimes known as geo blocking to prevent users in specific countries from accessing your content, and you can specify whether you want CloudFront to create standard logs or real-time logs showing viewer activity. By choosing the appropriate configuration settings for your distribution, you can ensure that your content is distributed efficiently and securely to your intended audience.
 
 

@@ -53,3 +53,18 @@ C. Use AWS IAM Identity Center to authenticate users and have them directly acce
 **D. Use API Gateway in conjunction with Lambda and turn on the caching on frequently accessed data and enable DynamoDB global replication.**
 
 E. Since Auto Scaling is enabled by default, the provisioned read and write capacity will adjust automatically. Also enable DynamoDB Accelerator (DAX) to improve the performance from milliseconds to microseconds.
+
+========================================>
+
+**Question**
+
+A company needs to keep user transaction data in an Amazon DynamoDB table. The company must retain the data for 7 years.
+What is the MOST operationally efficient solution that meets these requirements?
+
+A. Use DynamoDB point-in-time recovery to back up the table continuously.
+
+**B. Use AWS Backup to create backup schedules and retention policies for the table.**
+
+C. Create an on-demand backup of the table by using the DynamoDB console. Store the backup in an Amazon S3 bucket. Set an S3 Lifecycle configuration for the S3 bucket.
+
+D. Create an Amazon EventBridge (Amazon CloudWatch Events) rule to invoke an AWS Lambda function. Configure the Lambda function to back up the table and to store the backup in an Amazon S3 bucket. Set an S3 Lifecycle configuration for the S3 bucket.

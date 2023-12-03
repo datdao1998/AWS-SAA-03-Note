@@ -39,3 +39,54 @@ B. Use an Auto Scaling policy with the DB instance to automatically scale when t
 **C. Create a snapshot when tests are completed. Terminate the DB instance and restore the snapshot when required.**
 
 D. Modify the DB instance to a low-capacity instance when tests are completed. Modify the DB instance again when required.
+
+======================================>
+
+**Question**
+
+An application is hosted in an Auto Scaling group of EC2 instances and a Microsoft SQL Server on Amazon RDS. There is a requirement that all in-flight data between your web servers and RDS should be secured.
+
+Which of the following options is the MOST suitable solution that you should implement? (Select TWO.)
+
+
+**A. Force all connections to your DB instance to use SSL by setting the *rds.force_ssl* parameter to true. Once done, reboot your DB instance.**
+
+B. Configure the security groups of your EC2 instances and RDS to only allow traffic to and from port 443.
+
+**C. Download the Amazon RDS Root CA certificate. Import the certificate to your servers and configure your application to use SSL to encrypt the connection to RDS.**
+
+D. Specify the TDE option in an RDS option group that is associated with that DB instance to enable transparent data encryption (TDE).
+
+E. Enable the IAM DB authentication in RDS using the AWS Management Console
+
+======================================>
+
+**Question**
+
+A company is running an online transaction processing (OLTP) workload on AWS. This workload uses an unencrypted Amazon RDS DB instance in a Multi-AZ deployment. Daily database snapshots are taken from this instance.
+What should a solutions architect do to ensure the database and snapshots are always encrypted moving forward?
+
+**A. Encrypt a copy of the latest DB snapshot. Replace existing DB instance by restoring the encrypted snapshot.**
+
+B. Create a new encrypted Amazon Elastic Block Store (Amazon EBS) volume and copy the snapshots to it. Enable encryption on the DB instance.
+
+C. Copy the snapshots and enable encryption using AWS Key Management Service (AWS KMS) Restore encrypted snapshot to an existing DB instance.
+
+D. Copy the snapshots to an Amazon S3 bucket that is encrypted using server-side encryption with AWS Key Management Service (AWS KMS) managed keys (SSE-KMS).
+
+======================================>
+
+**Question**
+
+A company runs its two-tier ecommerce website on AWS. The web tier consists of a load balancer that sends traffic to Amazon EC2 instances. The database tier uses an Amazon RDS DB instance. The EC2 instances and the RDS DB instance should not be exposed to the public internet. The EC2 instances require internet access to complete payment processing of orders through a third-party web service. The application must be highly available.
+Which combination of configuration options will meet these requirements? (Choose two.)
+
+**A. Use an Auto Scaling group to launch the EC2 instances in private subnets. Deploy an RDS Multi-AZ DB instance in private subnets.**
+
+B. Configure a VPC with two private subnets and two NAT gateways across two Availability Zones. Deploy an Application Load Balancer in the private subnets.
+
+C. Use an Auto Scaling group to launch the EC2 instances in public subnets across two Availability Zones. Deploy an RDS Multi-AZ DB instance in private subnets.
+
+D. Configure a VPC with one public subnet, one private subnet, and two NAT gateways across two Availability Zones. Deploy an Application Load Balancer in the public subnet.
+
+**E. Configure a VPC with two public subnets, two private subnets, and two NAT gateways across two Availability Zones. Deploy an Application Load Balancer in the public subnets.**
