@@ -83,3 +83,16 @@ Kinesis Data Firehose currently supports Amazon S3, Amazon Redshift, Amazon Open
 ```
 You can use CloudFront to deliver video on demand (VOD) or live streaming video using any HTTP origin
 ```
+
+```
+WAF - can't support NLB and its supports API Gateway
+```
+
+```
+RDS Multi-AZ = Synchronous = Disaster Recovery (DR)
+Read Replica = Asynchronous = High Availability
+```
+
+```
+Whenever you see SFTP , FTP look for "Transfer" in options available
+```

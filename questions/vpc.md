@@ -86,3 +86,21 @@ B. Use rules in AWS WAF to prevent internet access. Deny access to all AWS Regio
 D. Create an outbound rule for the network ACL in each VPC to deny all traffic from 0.0.0.0/0. Create an IAM policy for each user to prevent the use of any AWS Region other than ap-northeast-3.
 
 E. Use AWS Config to activate managed rules to detect and alert for internet gateways and to detect and alert for new resources deployed outside of ap-northeast-3.
+
+==============================>
+
+**Question**
+
+A company has an AWS account used for software engineering. The AWS account has access to the company’s on-premises data center through a pair of AWS Direct Connect connections. All non-VPC traffic routes to the virtual private gateway.
+
+A development team recently created an AWS Lambda function through the console. The development team needs to allow the function to access a database that runs in a private subnet in the company’s data center.
+
+Which solution will meet these requirements?
+
+**A. Configure the Lambda function to run in the VPC with the appropriate security group.**
+
+B. Set up a VPN connection from AWS to the data center. Route the traffic from the Lambda function through the VPN.
+
+C. Update the route tables in the VPC to allow the Lambda function to access the on-premises data center through Direct Connect.
+
+D. Create an Elastic IP address. Configure the Lambda function to send traffic through the Elastic IP address without an elastic network interface.
