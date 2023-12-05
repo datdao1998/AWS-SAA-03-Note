@@ -96,3 +96,11 @@ Read Replica = Asynchronous = High Availability
 ```
 Whenever you see SFTP , FTP look for "Transfer" in options available
 ```
+
+```
+You can't create a CNAME record for zone apex
+```
+
+```
+marketing communications - > Pinpoint
+```
